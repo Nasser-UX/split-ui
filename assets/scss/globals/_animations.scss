@@ -23,42 +23,26 @@
 
 // Fade In Animation
 
-@keyframes fadeIn {
+@keyframes moveRight {
   0% {
     opacity: 0;
-    transform: translateY(-100px);
+    transform: translate(-100px, -50%);
   }
 
   100% {
     opacity: 1;
-    transform: translateY(0px);
+    transform: translate(0%, -50%);
   }
 }
 
-.animated--fade-in {
-  animation-name: fadeIn;
+.animated--moveRight {
+  animation-name: moveRight;
   animation-duration: 1200ms;
-  animation-timing-function: opacity cubic-bezier(0, 1, 0.4, 1);
+  animation-timing-function: transform cubic-bezier(0.18, 1.25, 0.4, 1),
+  opacity cubic-bezier(0, 1, 0.4, 1);
 }
 
-@keyframes dropDown {
-  0% {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(45px);
-  }
-}
-
-.animated--dropdown {
-  animation-name: dropDown;
-  animation-duration: 500ms;
-  animation-timing-function: opacity cubic-bezier(0, 1, 0.4, 1);
-}
-
+ 
 
 .autoShow {
   animation: autoShowAnimation;
