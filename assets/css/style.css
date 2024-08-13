@@ -356,6 +356,14 @@ body {
   margin-inline-start: 5rem;
   color: #4CC2BF;
 }
+@media (max-width: 1200px) {
+  .hero-slider .hero-swiper-content h1 {
+    font-size: 2.5rem;
+  }
+  .hero-slider .hero-swiper-content h1.highlight-txt {
+    margin-inline-start: 0;
+  }
+}
 .hero-slider .hero-swiper-content p {
   max-width: 50%;
   font-size: 1.2rem;
@@ -377,6 +385,11 @@ body {
 .about-split p {
   margin-bottom: 30px;
   font-size: 1.5rem;
+}
+@media (max-width: 1200px) {
+  .about-split .autoShow {
+    padding-inline-start: 30px;
+  }
 }
 
 .properties-swiper {
