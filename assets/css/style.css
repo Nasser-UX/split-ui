@@ -107,6 +107,21 @@ a {
   animation-timing-function: opacity cubic-bezier(0, 1, 0.4, 1);
 }
 
+.autoShow {
+  animation: autoShowAnimation;
+  animation-timeline: view(40% auto);
+}
+
+@keyframes autoShowAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(200px) scale(0.3);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
 .split-btn, .split-btn-outline {
   font-size: 1.2rem;
   padding: 0.5rem 1rem;

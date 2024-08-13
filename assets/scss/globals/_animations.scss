@@ -7,6 +7,7 @@
     transform: scale(0.9);
     opacity: 0;
   }
+
   100% {
     transform: scale(1);
     opacity: 1;
@@ -27,6 +28,7 @@
     opacity: 0;
     transform: translateY(-100px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0px);
@@ -44,6 +46,7 @@
     opacity: 0;
     transform: translateY(-10px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(45px);
@@ -56,4 +59,20 @@
   animation-timing-function: opacity cubic-bezier(0, 1, 0.4, 1);
 }
 
- 
+
+.autoShow {
+  animation: autoShowAnimation;
+  animation-timeline: view(40% auto);
+}
+
+@keyframes autoShowAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(200px) scale(0.3);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
