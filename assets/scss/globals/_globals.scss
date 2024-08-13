@@ -1,0 +1,48 @@
+@use './variables' as *;
+
+a {
+    text-decoration: none;
+}
+
+.color-primary {
+    color: $primary-color !important;
+}
+
+.color-secondary {
+    color: $secondary-color !important;
+}
+
+.bg-secondary {
+    background-color: $secondary-light !important;
+}
+
+.section-padding {
+    padding-block: 5rem;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-family: "IBM-bold";
+    margin-bottom: 1.5rem;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.swiper-pagination {
+    .swiper-pagination-bullet {
+        border-radius: 0;
+        width: 10px;
+        height: 10px;
+        background: $secondary-color;
+        opacity: 1;
+
+        &-active {
+            background: $primary-color;
+            width: 40px;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+@use '../globals' as *;
+
+.main-header {
+    font-family: "IBM-medium";
+
+    >nav {
+        background-color: $white;
+        padding-block: 20px;
+
+        ul {
+            li {
+                a {
+                    color: $primary-color;
+
+                    &.active {
+                        color: $secondary-color !important;
+                    }
+                }
+            }
+        }
+    }
+}

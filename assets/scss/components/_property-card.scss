@@ -1,0 +1,90 @@
+@use '../globals/variables' as *;
+
+.property-card {
+    color: inherit;
+
+    &-img {
+        height: 250px;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all 0.7s ease-in;
+        }
+    }
+
+    &-details {
+        background-color: $white;
+        padding: 20px;
+
+        .details-top {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+
+            &-prop-info {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: start;
+
+                strong {
+                    font-weight: normal;
+                }
+
+                h3 {
+                    font-size: 1rem;
+                    font-family: "IBM-bold";
+                    color: $primary-color;
+                    margin: 10px 0;
+                }
+            }
+
+            .area {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 20px;
+                    margin-bottom: 5px;
+                }
+
+                h5 {
+                    margin: 0;
+                    font-size: 1.1rem;
+                    font-family: "IBM-medium";
+                    color: $secondary-color;
+                }
+
+            }
+        }
+
+        .details-bottom {
+            border-top: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+            padding: 15px 0;
+            color: #002F56;
+
+            img {
+                width: 20px;
+                margin-inline-end: 5px;
+            }
+            span {
+                font-size: .9rem;
+            }
+        }
+    }
+
+    &:hover {
+        .property-card-img {
+            img {
+                transform: scale(1.2);
+            }
+        }
+    }
+}

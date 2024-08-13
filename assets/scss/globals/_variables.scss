@@ -1,0 +1,15 @@
+$primary-color: #262E5C;
+$secondary-color: #4CC2BF;
+$text-color: #002F56;
+$secondary-light: #E7F4F7;
+$white: #FFFFFF;
+
+
+
+
+@mixin theme($light-theme: true) {
+    @if $light-theme {
+        background: lighten($main-black, 100%);
+        //color: darken ($white, 100%);
+    }
+}

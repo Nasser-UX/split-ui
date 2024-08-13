@@ -1,0 +1,85 @@
+@use '../globals' as *;
+
+.footer {
+    background-color: $primary-color;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        content: "";
+        background: $primary-color url("/assets/images/footer-pattern.svg") no-repeat center center;
+        background-size: contain;
+        width: 400px;
+        height: 100%;
+        position: absolute;
+        left: -170px;
+        top: 0;
+    }
+
+    .footer-column {
+        h3 {
+            margin-bottom: 25px;
+            font-size: 1.2rem;
+            font-family: "IBM-semibold";
+        }
+
+        ul {
+            list-style: none;
+            color: $secondary-color;
+            padding: 0;
+
+            li {
+                margin-bottom: 10px;
+
+                img {
+                    margin-inline-end: 5px;
+                }
+
+                a {
+                    color: $white;
+
+                    &:hover {
+                        color: $secondary-color;
+                    }
+                }
+            }
+
+            &.social-icons {
+                display: flex;
+                align-items: center;
+
+                li {
+                    margin-inline: 5px;
+                }
+            }
+        }
+
+        .colored-logo {
+            margin-block-start: auto;
+            max-width: 160px;
+        }
+    }
+
+    .footer-end {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-block: 25px;
+        border-top: 1px solid #3F4A72;
+
+        ul {
+            display: flex;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+
+            li {
+                margin-inline-end: 15px;
+            }
+        }
+
+        p {
+            margin: 0;
+        }
+    }
+}

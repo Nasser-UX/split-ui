@@ -1,0 +1,6 @@
+1- slider pagination
+2- calc
+3- Animation for slider
+4- Animation for about image with mask
+5- fix split button background size
+
