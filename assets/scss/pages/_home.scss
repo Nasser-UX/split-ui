@@ -65,6 +65,14 @@ body {
         p {
             max-width: 50%;
             font-size: 1.2rem;
+
+            @media (max-width: 990px) {
+                max-width: 80%;
+            }
+        }
+
+        @media (max-width: 550px) {
+            right: 60px;
         }
     }
 
@@ -95,9 +103,7 @@ body {
     }
  
     @media (max-width: 1200px) {
-        .autoShow {
-            padding-inline-start: 30px;
-        }
+         
     }
 }
 
@@ -144,6 +150,7 @@ body {
         color: $white;
         margin-bottom: 30px;
 
+        
         &::before {
             content: "";
             position: absolute;
@@ -153,8 +160,9 @@ body {
             height: 200px;
             background: url('/assets/images/split-shape.svg') no-repeat center center;
             background-size: contain;
+            
         }
-
+        
         &::after {
             content: "";
             position: absolute;
@@ -165,24 +173,37 @@ body {
             background: url(/assets/images/split-shape.svg) no-repeat center center;
             background-size: contain;
         }
-
+        
         .text {
             margin-inline-start: 30px;
             margin-top: 20px;
             display: flex;
             flex-direction: column;
             flex: 1 1 100%;
-
+            
             h3 {
                 font-family: "IBM-bold";
             }
         }
-
+        
         .split-btn-outline {
             margin-inline-start: auto;
             margin-top: 10px;
             min-width: 150px;
             text-align: center;
+        }
+        @media (max-width: 990px) {
+            flex-direction: column;
+            padding: 40px 80px;
+
+            .text {
+                margin-inline-start: 0;
+            }
+
+            .split-btn-outline {
+                margin-inline-start: 0;
+                z-index: 100;
+            }
         }
     }
 
@@ -215,8 +236,24 @@ body {
                     position: absolute;
                     left: -40px;
                     z-index: 999;
-                    top: 50%;
+                    top: 40%;
                     transform: translate(0, -50%);
+                    transform: translateX(0px);
+                }
+                
+                &:hover {
+                    &:nth-child(1) {
+                        &::after {
+                            animation: movingAnimation 1s linear infinite backwards;
+                        }
+                    }
+                }
+                &:hover {
+                    &:nth-child(2) {
+                        &::after {      
+                            animation: movingAnimation 1s linear infinite backwards;
+                        }
+                    }
                 }
 
                 &-step {
@@ -243,6 +280,30 @@ body {
                 p {
                     color: #415463;
                     font-family: "IBM-medium";
+                }
+            }
+
+            @media (max-width: 768px) {
+                gap: 50px;
+                margin-top: 2rem;
+                flex-direction: column;
+
+                .sequence-card {
+                    border: 3px solid #CEEAF0;
+                    border-bottom: 0;
+
+                    &::after {
+                        content: "";
+                        left: 45% !important;
+                        top: 85% !important;
+                        transform: rotate(-90deg) !important;
+                        transform: translateY(0px);
+                        animation: movingDownAnimation 2s linear infinite backwards;
+                    }
+                }
+
+                &:last-child {
+                    border-BOTTOM: 3px solid #CEEAF0;
                 }
             }
         }

@@ -60,3 +60,29 @@
     transform: translateY(0px) scale(1);
   }
 }
+
+.moving {
+  animation: movingAnimation 1s linear infinite backwards;
+}
+
+@keyframes movingAnimation {
+  0% {
+    transform: translateX(0px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-20px);
+    opacity: 1;
+  }
+}
+
+@keyframes movingDownAnimation {
+  0% {
+    transform: translateY(0px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(-20px);
+    opacity: 1;
+  }
+}
