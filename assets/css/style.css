@@ -54,6 +54,90 @@ a {
   width: 40px;
 }
 
+.required-field {
+  color: #FF0000;
+}
+
+.popover-item {
+  float: inline-end;
+  margin-top: 5px;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+.form-group label {
+  color: #262E5C;
+  font-family: "IBm-medium";
+}
+.form-group .form-control {
+  border: 1px solid #CEEAF0;
+  border-radius: 0;
+  margin-top: 0.5rem;
+  transition: border-color 0.3 s ease-in-out;
+}
+.form-group .form-control:focus {
+  outline: 0;
+  box-shadow: none;
+  border-color: #4CC2BF;
+}
+@media (min-width: 1600px) {
+  .form-group .form-control {
+    height: 48px;
+  }
+}
+
+.form-check {
+  padding-left: 0;
+  padding-right: 1.5em;
+  margin-block: 1rem 2rem;
+  font-family: "IBM-semibold";
+  color: #262E5C;
+}
+.form-check .form-check-input {
+  float: right;
+  margin-right: -2em;
+  width: 1.4em;
+  height: 1.4em;
+}
+.form-check .form-check-input:checked {
+  background-color: #4CC2BF;
+  border-color: #4CC2BF;
+}
+.form-check label {
+  margin-top: 0.3em;
+}
+
+.alert {
+  border-radius: 0;
+  margin-bottom: 2rem;
+  padding-inline-start: 4rem;
+}
+.alert.alert-success {
+  border-color: #0A8944;
+  background: rgba(10, 137, 68, 0.1) url("/assets/images/success.svg") no-repeat 98% 20px;
+}
+.alert.alert-success h3 {
+  color: #0A8944;
+}
+.alert.alert-error {
+  border-color: #C73434;
+  background: rgba(199, 52, 52, 0.1) url("/assets/images/error.svg") no-repeat 98% 20px;
+}
+.alert.alert-error h3 {
+  color: #C73434;
+}
+.alert img {
+  margin-inline-end: 1rem;
+}
+.alert h3 {
+  font-family: "IBM-bold";
+  font-size: 1.6rem;
+}
+.alert p {
+  margin: 0;
+}
+
 @font-face {
   font-family: "IBM-regular";
   src: url("/assets/fonts/IBMPlexSansArabic-Regular.ttf");
@@ -190,6 +274,11 @@ a {
 .split-btn:active, .split-btn:hover {
   background-size: 290% 140%;
   --t: 0.2s 0.1s;
+}
+
+.link-btn {
+  color: #4CC2BF;
+  font-family: "IBM-bold";
 }
 
 .main-header {
@@ -628,6 +717,167 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 120px;
+}
+
+.inner-top-banner {
+  background: #262E5C url("/assets/images/innerpage-banner.jpg") no-repeat center center;
+  background-size: cover;
+  height: 400px;
+  font-family: "IBM-bold";
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.inner-top-banner h1 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+.inner-top-banner h1:last-child {
+  margin-inline-start: 5rem;
+}
+
+.bc-inner-page {
+  font-family: "IBM-regular";
+  background: #262E5C;
+  color: #FFFFFF;
+  padding-block: 10px;
+}
+.bc-inner-page .breadcrumb li {
+  color: #FFFFFF;
+}
+.bc-inner-page .breadcrumb li a {
+  color: #FFFFFF;
+}
+.bc-inner-page .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+  float: right;
+  color: #FFFFFF;
+  padding-inline: 10px;
+  transform: rotate(180deg);
+  filter: invert(1) brightness(4);
+}
+
+.inner-content {
+  font-family: "IBM-regular";
+}
+.inner-content .split-apply-form {
+  margin-block: 2rem;
+  background-color: #FFFFFF;
+  box-shadow: 0px 4px 20px 3px #daebef;
+  min-height: 500px;
+  display: flex;
+  align-items: flex-start;
+}
+.inner-content .split-apply-form aside {
+  flex: 1 1 25%;
+  background-color: #F2F9FB;
+}
+.inner-content .split-apply-form aside ul {
+  list-style: none;
+  padding: 2rem 1rem;
+}
+.inner-content .split-apply-form aside ul li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  position: relative;
+}
+.inner-content .split-apply-form aside ul li:not(:last-child)::after {
+  content: "";
+  width: 2px;
+  height: calc(100% - 30px + 1rem);
+  background-color: #6C737F;
+  position: absolute;
+  right: 14px;
+  top: 30px;
+}
+.inner-content .split-apply-form aside ul li .step-no {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid #6C737F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.inner-content .split-apply-form aside ul li > div {
+  flex: 1 1 80%;
+  margin-inline-start: 0.7rem;
+}
+.inner-content .split-apply-form aside ul li > div h4 {
+  font-family: "IBM-semibold";
+  color: #6C737F;
+  font-size: 1.25rem;
+}
+.inner-content .split-apply-form aside ul li > div p {
+  color: #B3B6B7;
+  font-size: 0.95rem;
+}
+.inner-content .split-apply-form aside ul li.active-step::after {
+  background-color: #4CC2BF;
+}
+.inner-content .split-apply-form aside ul li.active-step .step-no {
+  border-color: #4CC2BF;
+  color: #4CC2BF;
+}
+.inner-content .split-apply-form aside ul li.active-step h4 {
+  color: #262E5C;
+}
+.inner-content .split-apply-form main.form-content {
+  flex: 1 1 75%;
+  padding: 3rem 2rem;
+}
+.inner-content .split-apply-form main.form-content .wrap {
+  border: 1px solid #E7F4F7;
+  height: 100%;
+  padding-inline: 2rem;
+}
+.inner-content .split-apply-form main.form-content .wrap .form-header {
+  transform: translateY(-1rem);
+  margin-bottom: 1rem;
+}
+.inner-content .split-apply-form main.form-content .wrap .form-header h3 {
+  background-color: #FFFFFF;
+  display: inline-flex;
+  padding-inline: 1rem;
+  font-family: "IBM-bold";
+  color: #262E5C;
+  font-size: 1.5rem;
+}
+.inner-content .split-apply-form main.form-content .wrap .form-header p {
+  color: #B3B6B7;
+}
+.inner-content .split-apply-form main.form-content .form-footer {
+  background-color: #CEEAF0;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+}
+.inner-content .split-apply-form main.form-content .form-footer .split-btn {
+  min-width: 120px;
+  text-align: center;
+}
+.inner-content .split-apply-form main.form-content .form-footer .split-btn:hover {
+  color: #FFFFFF;
+}
+.inner-content .split-apply-form main.form-content .form-footer .link-btn {
+  margin-inline-start: auto;
+}
+
+.data-card {
+  font-family: "IBM-medium";
+  margin-bottom: 2rem;
+}
+.data-card label {
+  color: #262E5C;
+  margin-bottom: 1rem;
+}
+.data-card h6 {
+  color: #4CC2BF;
+}
+.data-card .badge {
+  font-weight: normal;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -56,3 +56,101 @@ a {
         }
     }
 }
+
+.required-field {
+    color: #FF0000;
+}
+
+.popover-item {
+    float: inline-end;
+    margin-top: 5px;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+    label {
+        color: $primary-color;
+        font-family: "IBm-medium";
+    }
+
+    .form-control {
+        border: 1px solid #CEEAF0;
+        border-radius: 0;
+        margin-top: .5rem;
+        transition: border-color .3 s ease-in-out;
+
+        &:focus {
+            outline: 0;
+            box-shadow: none;
+            border-color: $secondary-color;        
+        }
+
+        @media (min-width: 1600px) {
+            height: 48px;
+        }
+    }
+    
+}
+
+.form-check {
+    padding-left: 0;
+    padding-right: 1.5em;
+    margin-block: 1rem 2rem;
+    font-family: "IBM-semibold";
+    color: $primary-color;
+
+     .form-check-input {
+        float: right;
+        margin-right: -2em;
+        width: 1.4em;
+        height: 1.4em;
+
+        &:checked {
+            background-color: $secondary-color;
+            border-color: $secondary-color;
+        }
+    }
+
+    label {
+        margin-top: .3em;
+    }
+}
+
+.alert {
+    // display: flex;
+    // align-items: flex-start;
+    //background-color: transparentize($success, .9);
+    border-radius: 0;
+    margin-bottom: 2rem;
+    padding-inline-start: 4rem;
+    &.alert-success {
+        border-color:$success ;
+        background: transparentize($success, .9) url("/assets/images/success.svg") no-repeat 98% 20px;
+
+        h3 {
+            color: $success;
+        }
+    }
+
+    &.alert-error {
+        border-color: $error;
+        background: transparentize($error, .9) url("/assets/images/error.svg") no-repeat 98% 20px;
+
+        h3 {
+            color: $error;
+        }
+    }
+
+    img {
+        margin-inline-end: 1rem;
+    }
+
+    h3 {
+        font-family: "IBM-bold";
+        font-size: 1.6rem;
+    }
+
+    p {
+        margin: 0;
+    }
+}
