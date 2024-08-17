@@ -1,0 +1,60 @@
+@use '../globals' as *;
+
+.login-wrapper {
+    display: flex;
+    align-items: center;
+    max-width: 70%;
+    padding: 2rem 4rem;
+    margin: 2rem auto;
+    background: linear-gradient(to bottom , #ffffff, #CEEAF0);
+    border: 1px solid $secondary-light;
+
+    .data {
+        flex: 1 1 60%;
+        margin-inline-end: 4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        
+        h3 {
+            color: $primary-color;
+            font-size: 1.6rem;
+            font-family: "IBM-bold";
+        }
+        
+        p {
+            color: $disabled-txt;
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+        }
+
+        .split-btn {
+            min-width: 150px;
+            text-align: center;
+            &:hover {
+                color: $white;
+            }
+        }
+    }
+
+    img {
+        flex: 1 1 30%;
+        margin-inline-start: auto;
+    }
+}
+
+
+.otp-group  {
+    display: flex;
+    input {
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        font-size: 18px;
+        margin: 0 5px;
+    }
+}
+
+.otp-input:focus, .email-otp-input:focus {
+    border-color: #007bff;
+}

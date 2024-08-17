@@ -63,6 +63,7 @@
         aside {
             flex: 1 1 25%;
             background-color: #F2F9FB;
+ 
 
             ul {
                 list-style: none;
@@ -121,6 +122,19 @@
                         h4  {
                             color: $primary-color;
                         }
+
+                        &.completed {
+                            .step-no {
+                                position: relative;
+                                &::after {
+                                    content: "";
+                                    position: absolute;
+                                    inset: 0;
+                                    border-radius: 50%;
+                                    background: $secondary-color url('/assets/images/check.svg') no-repeat center center;
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -160,6 +174,13 @@
                 display: flex;
                 align-items: center;
 
+                > div {
+                    .split-btn,.split-btn-outline {
+                        display: inline-flex;
+                        justify-content: center;
+                    }
+                }
+
                 .split-btn {
                     min-width: 120px;
                     text-align: center;
@@ -167,6 +188,11 @@
                     &:hover {
                         color: $white;
                     }
+                }
+                .split-btn-outline {
+                    min-width: 120px;
+                    text-align: center;
+ 
                 }
 
                 .link-btn {
@@ -190,5 +216,87 @@
 
     .badge {
         font-weight: normal;
+    }
+}
+
+// no-requests
+
+.no-requests {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    border: 1px solid #E7F4F7;
+
+    img {
+        margin-bottom: 1rem;
+        width: 150px;
+    }
+
+    h3 {
+        font-size: 2rem;
+        font-family: "IBM-semibold";
+    }
+
+    p {
+        color: $disabled-txt;
+        margin-bottom: 2rem;
+    }
+}
+
+// card-fixed-top
+.user-basic-data {
+    &.card-fixed-top {
+        background-color: transparentize($secondary-light, .6);
+        border: 1px solid $secondary-light;
+        padding: 2rem 2rem 0;
+        margin-bottom: 2rem;
+    }
+
+}
+
+// contract-msg
+
+.contract-msg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    text-align: center;
+
+    .contract-img-wrap {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        background-color: #F3FAFB;
+        border: 1px solid #CEEAF0;
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &.verified {
+        flex-direction: row;
+        justify-content: flex-start;
+
+        .contract-img-wrap {
+            width: 100px;
+            height: 100px;
+            margin-inline-end: 1rem;
+
+            img {
+                width: 50px;
+            }
+        }
+        > div {
+            text-align: start;
+
+            p {
+                font-family: "IBM-semibold";
+            }
+        }
     }
 }

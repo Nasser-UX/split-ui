@@ -49,7 +49,10 @@
                     </ul>
                     <div class="d-flex  me-auto" role="search">
                         <button class="split-btn-outline mx-2" type="submit">EN</button>
-                        <button class="split-btn" type="submit">سجل الآن</button>
+                        <a href="/profile.html" class="split-btn" type="submit">
+                            <img src="/assets/images/user-icon.svg" alt="user icon">
+                            <span>عبد الله أحمد</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -88,7 +91,7 @@
                 <div class="split-apply-form">
                     <aside>
                         <ul>
-                            <li class="active-step">
+                            <li class="active-step completed">
                                 <span class="step-no">1</span>
                                 <div>
                                     <h4 class="step-title">البيانات الاساسية</h4>
@@ -126,21 +129,21 @@
                         </ul>
                     </aside>
                     <main class="form-content">
+                        <!-- alert status -->
+                        <!-- alert-error - alert-success -->
+                        <div class="alert alert-success mb-5">
+                
+                            <h3>تم الدفع بنجاح</h3>
+                            <p>يتم دراسة الطلب من الجهات المختصة وتستغرق فترة الدراسة 48 ساعة </p>
+                
+                        </div>
                         <div class="wrap">
                             <div class="form-header">
                                 <h3>دراسة الطلب</h3>
                                 <p>يتم دراسة الطلب من الجهات المختصة وتستغرق فترة الدراسة 48 ساعة </p>
                             </div>
-
-                            <!-- alert status -->
-                             <!-- alert-error - alert-success -->
-                             <div class="alert alert-success">
-                             
-                                    <h3>تم الدفع بنجاح</h3>
-                                <p>يتم دراسة الطلب من الجهات المختصة وتستغرق فترة الدراسة 48 ساعة </p>
-                              
-                             </div>
-
+                    
+                    
                             <div class="user-basic-data">
                                 <div class="row">
                                     <div class="col-lg-4 col-md-6 col-sm-12">
@@ -167,22 +170,31 @@
                                             <h6>شقة</h6>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="col-lg-6 col-md-6 col-sm-12">
                                         <div class="data-card">
                                             <label>حالة الطلب</label>
                                             <h6>
-                                                <div class="badge bg-success">
+                                                <div class="badge rounded-pill bg-light done">
+                                                    تم الانتهاء
+                                                </div>
+                                                <div class="badge rounded-pill bg-light under-processing">
                                                     تحت الدراسة
+                                                </div>
+                                                <div class="badge rounded-pill bg-light canceled">
+                                                    ملغي
                                                 </div>
                                             </h6>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            </div>
                         </div>
+                    
                         <div class="form-footer">
-                            <a href="" class="split-btn">إدفع الان</a>
+                            <div>
+                                <a href="" class="split-btn-outline">السابق</a>
+                                <a href="" class="split-btn">التالي</a>
+                            </div>
                             <a href="" class="link-btn">إلغاء</a>
                         </div>
                     </main>

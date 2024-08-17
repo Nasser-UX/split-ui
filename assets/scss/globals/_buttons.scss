@@ -42,7 +42,7 @@
 
 .split-btn {
     @extend %btn;
-    --border: 3px;
+    --border: 5px;
     --slant: 0.5em;
     --color: #262E5C;
     background: linear-gradient(to top right, var(--color) 50%, transparent 50.1%) bottom left;
@@ -55,8 +55,14 @@
 
     &:active,
     &:hover {
+        color: $white;
         background-size: 290% 140%;
         --t: 0.2s 0.1s;
+    }
+
+    &.disabled {
+        --color: #c4c6d5;
+        cursor: not-allowed;
     }
 }
 

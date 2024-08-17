@@ -86,3 +86,18 @@
     opacity: 1;
   }
 }
+
+.rotating {
+  animation: rotatingAnimation 2s linear infinite backwards;
+}
+
+@keyframes rotatingAnimation {
+  0% {
+    transform: rotate(180deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+}

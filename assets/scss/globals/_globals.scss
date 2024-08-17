@@ -89,7 +89,18 @@ a {
             height: 48px;
         }
     }
-    
+}
+
+.date-type {
+    display: block;
+    float: inline-end;
+}
+
+input[type="checkbox"] {
+    &:checked {
+        background-color: $secondary-color;
+            border-color: $secondary-color;
+    }
 }
 
 .form-check {
@@ -152,5 +163,25 @@ a {
 
     p {
         margin: 0;
+    }
+}
+
+//badge 
+
+.badge {
+    color: $primary-color;
+    padding: 7px 15px;
+    font-size: 1rem;
+    &.done {
+        background-color: transparentize($success, .8) !important;
+        color: $success;
+    }
+    &.under-processing {
+        background-color: transparentize($warning, .8) !important;
+        color: $warning;
+    }
+    &.canceled {
+        background-color: transparentize($error, .8) !important;
+        color: $error;
     }
 }
