@@ -1,6 +1,11 @@
-1- slider pagination
-2- calc
-3- Animation for slider
-4- Animation for about image with mask
-5- fix split button background size
+1- main banner instead of slider
+2- admin pages
+3- static pages faq - about - be partner - how it works
+4- calculator
+5- profile
+6- proprty details
+7- properties with pagination
+8- sweet alert
+
+
 
