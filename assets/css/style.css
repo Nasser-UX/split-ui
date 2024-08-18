@@ -366,7 +366,7 @@ input[type=checkbox]:checked {
   .main-header > nav .navbar-collapse {
     position: absolute;
     top: 95px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     z-index: 99;
     width: 100%;
     left: 0px;
@@ -988,6 +988,49 @@ body {
 .inner-content .split-apply-form main.form-content .form-footer .link-btn {
   margin-inline-start: auto;
 }
+@media (max-width: 990px) {
+  .inner-content .split-apply-form {
+    flex-direction: column;
+  }
+  .inner-content .split-apply-form aside {
+    width: 100%;
+  }
+  .inner-content .split-apply-form aside ul {
+    display: flex;
+    padding-bottom: 1rem;
+    margin: 0;
+  }
+  .inner-content .split-apply-form aside ul li {
+    flex: 1 1 auto;
+    flex-direction: column;
+    align-items: center;
+  }
+  .inner-content .split-apply-form aside ul li .step-no {
+    width: 29px;
+    position: relative;
+    z-index: 999;
+    background: #f2f9fb;
+  }
+  .inner-content .split-apply-form aside ul li > div {
+    margin: 0.7rem 0 0;
+  }
+  .inner-content .split-apply-form aside ul li > div p {
+    display: none;
+  }
+}
+@media (max-width: 990px) and (max-width: 768px) {
+  .inner-content .split-apply-form aside ul li > div h4 {
+    text-align: center;
+  }
+}
+@media (max-width: 990px) {
+  .inner-content .split-apply-form aside ul li:not(:last-child)::after {
+    width: 100%;
+    height: 2px;
+    right: 50%;
+    top: 12px;
+  }
+}
 
 .data-card {
   font-family: "IBM-medium";
@@ -1068,6 +1111,18 @@ body {
 }
 .contract-msg.verified > div p {
   font-family: "IBM-semibold";
+}
+@media (max-width: 768px) {
+  .contract-msg.verified {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contract-msg.verified .contract-img-wrap {
+    margin-inline-end: 0;
+  }
+  .contract-msg.verified > div {
+    text-align: center;
+  }
 }
 
 .login-wrapper {
