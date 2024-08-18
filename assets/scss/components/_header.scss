@@ -26,6 +26,18 @@
         }
 
         .navbar-collapse {
+            @media (max-width: 990px) {
+                position: absolute;
+                top: 95px;
+                background-color: rgb(255, 255, 255);
+                z-index: 99;
+                width: 100%;
+                left: 0px;
+                padding-inline: 20px;
+                padding-block-end: 20px;
+                display: none;
+            }
+
             ul {
                 padding: 0;
             }
@@ -33,6 +45,31 @@
             .split-btn-outline {
                 margin-inline-start: 0 !important;
             }
+
+            &.show {
+                display: block;
+                animation: dropDown 0.5s alternate cubic-bezier(0, 1, 0.4, 1);
+            }
+        }
+    }
+}
+
+.navbar-toggler {
+    padding: 0;
+    border: 0;
+
+    &:focus {
+        outline: 0 !important;
+        border: 0;
+        box-shadow: none;
+    }
+
+    svg {
+        width: 40px !important;
+        height: 40px !important;
+
+        path {
+            stroke: $primary-color;
         }
     }
 }

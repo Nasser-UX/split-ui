@@ -39,10 +39,10 @@
   animation-name: moveRight;
   animation-duration: 1200ms;
   animation-timing-function: transform cubic-bezier(0.18, 1.25, 0.4, 1),
-  opacity cubic-bezier(0, 1, 0.4, 1);
+    opacity cubic-bezier(0, 1, 0.4, 1);
 }
 
- 
+
 
 .autoShow {
   animation: autoShowAnimation;
@@ -70,6 +70,7 @@
     transform: translateX(0px);
     opacity: 0;
   }
+
   100% {
     transform: translateX(-20px);
     opacity: 1;
@@ -81,6 +82,7 @@
     transform: translateY(0px);
     opacity: 0;
   }
+
   100% {
     transform: translateY(-20px);
     opacity: 1;
@@ -96,8 +98,28 @@
     transform: rotate(180deg);
     opacity: 0;
   }
+
   100% {
     transform: rotate(0deg);
     opacity: 1;
   }
+}
+
+
+@keyframes dropDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.animated--dropdown {
+  animation-name: dropDown;
+  animation-duration: 500ms;
+  animation-timing-function: opacity cubic-bezier(0, 1, 0.4, 1);
 }
