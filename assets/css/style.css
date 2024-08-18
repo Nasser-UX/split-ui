@@ -353,6 +353,7 @@ input[type=checkbox]:checked {
 }
 .main-header > nav ul li a {
   color: #262E5C;
+  padding-inline: 1rem !important;
 }
 .main-header > nav ul li a.active {
   color: #4CC2BF !important;
@@ -1125,21 +1126,32 @@ body {
   }
 }
 
+.login-container {
+  min-height: calc(100vh - 521px);
+  display: flex;
+  align-items: center;
+}
+
 .login-wrapper {
   display: flex;
   align-items: center;
-  max-width: 70%;
   padding: 2rem 4rem;
   margin: 2rem auto;
   background: linear-gradient(to bottom, #ffffff, #CEEAF0);
   border: 1px solid #E7F4F7;
+  min-height: 50vh;
 }
 .login-wrapper .data {
-  flex: 1 1 60%;
+  flex: 1 1 40%;
   margin-inline-end: 4rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+}
+@media (max-width: 990px) {
+  .login-wrapper .data {
+    margin-inline-end: 0;
+  }
 }
 .login-wrapper .data h3 {
   color: #262E5C;
@@ -1158,9 +1170,25 @@ body {
 .login-wrapper .data .split-btn:hover {
   color: #FFFFFF;
 }
+.login-wrapper .data .split-register {
+  font-family: "IBM-semibold";
+}
+.login-wrapper .data .split-register a {
+  text-decoration: underline;
+}
 .login-wrapper img {
   flex: 1 1 30%;
   margin-inline-start: auto;
+}
+@media (max-width: 990px) {
+  .login-wrapper {
+    padding: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .login-wrapper > img {
+    display: none;
+  }
 }
 
 .otp-group {
