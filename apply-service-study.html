@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-        <title>Split | Home Page</title>
-        <link rel="icon" href="/assets/images/favicon.png">
-        <link rel="stylesheet" href="assets/css/style.css">
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/vendor/swiper-bundle.min.css" />
+    <title>Split | Home Page</title>
+    <link rel="icon" href="/assets/images/favicon.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
 <body>
     <!-- start header -->
     <header class="main-header">
@@ -17,10 +19,10 @@
                 <a class="navbar-brand" href="#">
                     <img src="assets/images/SPLIT-Logo.svg" alt="Split Logo">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                <button class="navbar-toggler bodymovinanim" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
                     aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <!-- <span class="navbar-toggler-icon"></span> -->
                 </button>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -48,159 +50,158 @@
 
                     </ul>
                     <div class="d-flex  me-auto" role="search">
-                        <button class="split-btn-outline mx-2" type="submit">EN</button>
-                        <a href="/profile.html" class="split-btn" type="submit">
-                            <img src="/assets/images/user-icon.svg" alt="user icon">
-                            <span>عبد الله أحمد</span>
-                        </a>
+                        <button class="split-btn-outline ms-2" type="submit">EN</button>
+                        <button class="split-btn ms-2" type="submit">سجل الآن</button>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
-    
+
 
     <!-- start inner content -->
-        <section class="inner-top-banner">
-            <div class="banner-titles">
-                <h1>استأجر الان</h1>
-                <h1 class="color-secondary highlight-txt">وأدفع لاحقاً</h1>
-            </div>
-        </section>
-        <header class="bc-inner-page">
-           <div class="container">
+    <section class="inner-top-banner">
+        <div class="banner-titles">
+            <h1>استأجر الان</h1>
+            <h1 class="color-secondary highlight-txt">وأدفع لاحقاً</h1>
+        </div>
+    </section>
+    <header class="bc-inner-page">
+        <div class="container">
             <div class="d-flex align-items-center">
                 <div class="inner-header-right">
                     <h2>إستمارة الايجار</h2>
-                    <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+                    <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);"
+                        aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                          <li class="breadcrumb-item"><a href="#">الرئيسية</a></li>
-                          <li class="breadcrumb-item active" aria-current="page">إستمارة الايجار</li>
+                            <li class="breadcrumb-item"><a href="#">الرئيسية</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">إستمارة الايجار</li>
                         </ol>
-                      </nav>
+                    </nav>
                 </div>
                 <a href="" class="split-btn-outline light me-auto">تقديم طلب جدبد</a>
             </div>
-           </div>
-        </header>
+        </div>
+    </header>
 
-        <!-- sdtart content section -->
+    <!-- sdtart content section -->
 
-        <section class="inner-content">
-            <div class="container">
-                <div class="split-apply-form">
-                    <aside>
-                        <ul>
-                            <li class="active-step completed">
-                                <span class="step-no">1</span>
-                                <div>
-                                    <h4 class="step-title">البيانات الاساسية</h4>
-                                    <p>يتضمن النموذج حقولاً لجميع المعلومات الضرورية، بما في ذلك: الاسم الكامل، تاريخ الميلاد، الهوية الوطنية/الإقامة.</p>
-                                </div>
-                            </li>
-                            <li class="active-step">
-                                <span class="step-no">2</span>
-                                <div>
-                                    <h4 class="step-title">دراسة الطلب</h4>
-                                    <p>يتم دراسة الطلب من الجهات المختصة وتستغرق فترة الدراسة 48 ساعة </p>
-                                </div>
-                            </li>
-                            <li>
-                                <span class="step-no">3</span>
-                                <div>
-                                    <h4 class="step-title">نتيجة الطلب</h4>
-                                    <p>رقم الهاتف، عنوان البريد الإلكتروني</p>
-                                </div>
-                            </li>
-                            <li>
-                                <span class="step-no">4</span>
-                                <div>
-                                    <h4 class="step-title">بيانات الوحدة</h4>
-                                    <p>النوع والموقع والميزانية</p>
-                                </div>
-                            </li>
-                            <li>
-                                <span class="step-no">5</span>
-                                <div>
-                                    <h4 class="step-title">توثيق العقد</h4>
-                                    <p>تدعم وظيفة التحميل تنسيقات الملفات التاليه (e.g., .pdf, .jpg, .png)</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </aside>
-                    <main class="form-content">
-                        <!-- alert status -->
-                        <!-- alert-error - alert-success -->
-                        <div class="alert alert-success mb-5">
-                
-                            <h3>تم الدفع بنجاح</h3>
-                            <p>يتم دراسة الطلب من الجهات المختصة وتستغرق فترة الدراسة 48 ساعة </p>
-                
-                        </div>
-                        <div class="wrap">
-                            <div class="form-header">
-                                <h3>دراسة الطلب</h3>
+    <section class="inner-content">
+        <div class="container">
+            <div class="split-apply-form">
+                <aside>
+                    <ul>
+                        <li class="active-step completed">
+                            <span class="step-no">1</span>
+                            <div>
+                                <h4 class="step-title">البيانات الاساسية</h4>
+                                <p>يتضمن النموذج حقولاً لجميع المعلومات الضرورية، بما في ذلك: الاسم الكامل، تاريخ
+                                    الميلاد، الهوية الوطنية/الإقامة.</p>
+                            </div>
+                        </li>
+                        <li class="active-step">
+                            <span class="step-no">2</span>
+                            <div>
+                                <h4 class="step-title">دراسة الطلب</h4>
                                 <p>يتم دراسة الطلب من الجهات المختصة وتستغرق فترة الدراسة 48 ساعة </p>
                             </div>
-                    
-                    
-                            <div class="user-basic-data">
-                                <div class="row">
-                                    <div class="col-lg-4 col-md-6 col-sm-12">
-                                        <div class="data-card">
-                                            <label>الطلب</label>
-                                            <h6>0011</h6>
-                                        </div>
+                        </li>
+                        <li>
+                            <span class="step-no">3</span>
+                            <div>
+                                <h4 class="step-title">نتيجة الطلب</h4>
+                                <p>رقم الهاتف، عنوان البريد الإلكتروني</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="step-no">4</span>
+                            <div>
+                                <h4 class="step-title">بيانات الوحدة</h4>
+                                <p>النوع والموقع والميزانية</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="step-no">5</span>
+                            <div>
+                                <h4 class="step-title">توثيق العقد</h4>
+                                <p>تدعم وظيفة التحميل تنسيقات الملفات التاليه (e.g., .pdf, .jpg, .png)</p>
+                            </div>
+                        </li>
+                    </ul>
+                </aside>
+                <main class="form-content">
+                    <!-- alert status -->
+                    <!-- alert-error - alert-success -->
+                    <div class="alert alert-success mb-5">
+
+                        <h3>تم الدفع بنجاح</h3>
+                        <p>يتم دراسة الطلب من الجهات المختصة وتستغرق فترة الدراسة 48 ساعة </p>
+
+                    </div>
+                    <div class="wrap">
+                        <div class="form-header">
+                            <h3>دراسة الطلب</h3>
+                            <p>يتم دراسة الطلب من الجهات المختصة وتستغرق فترة الدراسة 48 ساعة </p>
+                        </div>
+
+
+                        <div class="user-basic-data">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="data-card">
+                                        <label>الطلب</label>
+                                        <h6>0011</h6>
                                     </div>
-                                    <div class="col-lg-4 col-md-6 col-sm-12">
-                                        <div class="data-card">
-                                            <label>تاريخ الطلب</label>
-                                            <h6>01/08/2024</h6>
-                                        </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="data-card">
+                                        <label>تاريخ الطلب</label>
+                                        <h6>01/08/2024</h6>
                                     </div>
-                                    <div class="col-lg-4 col-md-6 col-sm-12">
-                                        <div class="data-card">
-                                            <label>الموقع</label>
-                                            <h6>الرياض</h6>
-                                        </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="data-card">
+                                        <label>الموقع</label>
+                                        <h6>الرياض</h6>
                                     </div>
-                                    <div class="col-lg-4 col-md-6 col-sm-12">
-                                        <div class="data-card">
-                                            <label>الوحدة</label>
-                                            <h6>شقة</h6>
-                                        </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="data-card">
+                                        <label>الوحدة</label>
+                                        <h6>شقة</h6>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-12">
-                                        <div class="data-card">
-                                            <label>حالة الطلب</label>
-                                            <h6>
-                                                <div class="badge rounded-pill bg-light done">
-                                                    تم الانتهاء
-                                                </div>
-                                                <div class="badge rounded-pill bg-light under-processing">
-                                                    تحت الدراسة
-                                                </div>
-                                                <div class="badge rounded-pill bg-light canceled">
-                                                    ملغي
-                                                </div>
-                                            </h6>
-                                        </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="data-card">
+                                        <label>حالة الطلب</label>
+                                        <h6>
+                                            <div class="badge rounded-pill bg-light done">
+                                                تم الانتهاء
+                                            </div>
+                                            <div class="badge rounded-pill bg-light under-processing">
+                                                تحت الدراسة
+                                            </div>
+                                            <div class="badge rounded-pill bg-light canceled">
+                                                ملغي
+                                            </div>
+                                        </h6>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    
-                        <div class="form-footer">
-                            <div>
-                                <a href="" class="split-btn-outline">السابق</a>
-                                <a href="" class="split-btn">التالي</a>
-                            </div>
-                            <a href="" class="link-btn">إلغاء</a>
+                    </div>
+
+                    <div class="form-footer">
+                        <div>
+                            <a href="" class="split-btn-outline">السابق</a>
+                            <a href="" class="split-btn">التالي</a>
                         </div>
-                    </main>
-                </div>
+                        <a href="" class="link-btn">إلغاء</a>
+                    </div>
+                </main>
             </div>
-        </section>
+        </div>
+    </section>
     <!-- start footer -->
 
     <footer class="footer">
@@ -327,14 +328,13 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <!-- <script src="/assets/js/scripts.js"></script> -->
-    <script>
-var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-  return new bootstrap.Popover(popoverTriggerEl)
-})
-    </script>
+    <script src="/assets/vendor/bootstrap.bundle.min.js"></script>
+    <script src="/assets/vendor/jquery-3.7.1.min.js"></script>
+    <script src="/assets/js/datepicker/jquery.plugin.js"></script>
+    <script src="/assets/js/datepicker/jquery.calendars.all.min.js"></script>
+    <script src="/assets/js/datepicker/jquery.calendars.ummalqura.js"></script>
+    <script src="/assets/vendor/lottie_svg.min.js"></script>
+    <script src="/assets/js/scripts.js"></script>
 </body>
+
 </html>
