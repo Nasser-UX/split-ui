@@ -1,0 +1,136 @@
+@use '../globals' as *;
+
+body.admin {
+    direction: rtl;
+    text-align: start;
+}
+
+.split-admin-panel {
+    display: flex;
+    align-items: start;
+
+    aside {
+        flex: 1 1 200px;
+        background: linear-gradient(to bottom, #2F4D96, #1A959A);
+        min-height: 100vh;
+        color: $white;
+        background-size: 624px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+        @media (max-width: 1440px) {
+            flex: 1 1 25%;
+        }
+
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            padding: 2rem;
+            position: relative;
+            background: url(/assets/images/admin/aside-mask.svg) no-repeat right 100%;
+            height: 100%;
+            flex: auto;
+            background-size: 164%;
+
+            li {
+                padding: 0.5rem 1rem;
+                border-bottom: 1px solid #4e7377;
+
+                a {
+                    color: $white;
+                }
+
+                &.active {
+                    background: linear-gradient(45deg, #236996, transparent);
+
+                    a {
+                        color: $secondary-color;
+                        font-family: "IBM-semibold";
+                    }
+                }
+            }
+        }
+
+        footer {
+            margin-top: auto;
+            border-top: 1px solid #3ba9b5;
+            text-align: center;
+            padding-block-start: 2rem;
+        }
+    }
+
+    main {
+        flex: 1 1 75%;
+        padding: 2rem;
+
+        header {
+            padding-bottom: 1rem;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid #CEEAF0;
+        }
+
+        .admin-wrapper {
+            border: 1px solid #CEEAF0;
+            height: 100%;
+            padding-inline: 2rem;
+
+            .form-header {
+                transform: translateY(-1rem);
+
+                h3 {
+                    background-color: $white;
+                    display: inline-flex;
+                    padding-inline: 1rem;
+                    font-family: "IBM-bold";
+                    color: $primary-color;
+                    font-size: 1.5rem;
+                }
+
+            }
+
+            &-container {
+                padding: 0 1rem 1rem;
+
+                .bg-table-head {
+                    th {
+                        border-bottom: 0;
+                        color: #1A959A;
+                    }
+                }
+
+                tr:hover {
+                    --bs-table-accent-bg: #e7f4f7;
+                }
+
+                .download-file {
+                    color: #0A8944;
+                    font-family: "IBM-medium";
+
+                    img {
+                        width: 24px;
+                    }
+
+                    &:hover {
+                        color: #0A8944;
+                    }
+
+                }
+
+                td {
+                    font-family: "IBM-regular";
+                    color: $primary-color;
+
+                    .action-btns a {
+                        img {
+                            width: 20px;
+                            margin-inline: 0.2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

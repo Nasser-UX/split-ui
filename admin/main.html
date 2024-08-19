@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/vendor/bootstrap.min.css">
+    <title>Split | Admin Panel</title>
+    <link rel="icon" href="../assets/images/favicon.png">
+    <link rel="stylesheet" href="../assets/css/admin.css">
+</head>
+
+<body class="admin">
+
+    <section class="split-admin-panel">
+        <aside>
+            <ul>
+                <li>
+                    <a href="">
+                        <img src="../assets/images/admin/dashboard.svg" alt="dashboard">
+                        <span>لوحة البيانات</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="">
+                        <img src="../assets/images/admin/requests.svg" alt="requests">
+                        <span>الطلبات</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../assets/images/admin/users.svg" alt="users">
+                        <span>المستخدمين</span>
+                    </a>
+                </li>
+
+            </ul>
+            <footer>
+                <p>
+                    اسبلت
+                    &copy;
+                    2024
+                </p>
+            </footer>
+        </aside>
+
+        <main>
+
+            <header class="main-header">
+                <nav class="navbar navbar-expand-lg">
+
+                    <a class="navbar-brand" href="#">
+                        <img src="../assets/images/SPLIT-Logo.svg" alt="Split Logo">
+                    </a>
+
+                    <div class="d-flex  me-auto" role="search">
+                        <button class="split-btn-outline mx-2" type="submit">EN</button>
+                        <a href="/profile.html" class="split-btn" type="submit">
+                            <img src="../assets/images/user-icon.svg" alt="user icon">
+                            <span>عبد الله أحمد</span>
+                        </a>
+                    </div>
+
+                </nav>
+            </header>
+
+            <section>
+                <div class="admin-wrapper">
+                    <div class="form-header">
+                        <h3>الطلبات</h3>
+                    </div>
+
+                    <div class="admin-wrapper-container">
+                        <div class="table-search">
+                            <form action="">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <div class="form-group">
+                                            <label for="">رقم الطلب</label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <div class="form-group">
+                                            <label for=""> حالة الطلب</label>
+                                            <div class="input-group">
+                                                <select class="form-control">
+                                                    <option value="">مقبول</option>
+                                                    <option value="">مقبول</option>
+                                                    <option value="">مقبول</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-12">
+                                        <div class="d-flex align-items-end h-100">
+                                            <input type="submit" class="split-btn mb-3" value="بحث">
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        </form>
+                        <div class="table-container">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr class="bg-table-head">
+                                        <th scope="col">رقم الطلب</th>
+                                        <th scope="col">اسم المستخدم</th>
+                                        <th scope="col">رقم الوحدة</th>
+                                        <th scope="col">سعر الوحدة</th>
+                                        <th scope="col">حالة الطلب</th>
+                                        <th scope="col">عدد الاقساط المتبقية</th>
+                                        <th scope="col">العقد</th>
+                                        <th scope="col">التفاصيل</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">20005</th>
+                                        <td>محمد أحمد ابراهيم</td>
+                                        <td>123</td>
+                                        <td>45000 ريال</td>
+                                        <td>
+                                            <span class="badge rounded-pill done">مقبول</span>
+                                        </td>
+                                        <td>5</td>
+                                        <td><a href="" class="download-file">
+                                                <img src="../assets/images/admin/download-file.svg" alt="download-file">
+                                                <span>تحميل العقد</span>
+                                            </a></td>
+                                        <td>
+                                            <div class="action-btns">
+                                                <a href="">
+                                                    <img src="../assets/images/admin/view.svg" alt="view">
+                                                </a>
+                                                <a href="">
+                                                    <img src="../assets/images/admin/edit.svg" alt="edit">
+                                                </a>
+                                                <a href="">
+                                                    <img src="../assets/images/admin/delete.svg" alt="delete">
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">20005</th>
+                                        <td>محمد أحمد ابراهيم</td>
+                                        <td>123</td>
+                                        <td>45000 ريال</td>
+                                        <td>
+                                            <span class="badge rounded-pill done">مقبول</span>
+                                        </td>
+                                        <td>5</td>
+                                        <td><a href="" class="download-file">
+                                                <img src="../assets/images/admin/download-file.svg" alt="download-file">
+                                                <span>تحميل العقد</span>
+                                            </a></td>
+                                        <td>
+                                            <div class="action-btns">
+                                                <a href="">
+                                                    <img src="../assets/images/admin/view.svg" alt="view">
+                                                </a>
+                                                <a href="">
+                                                    <img src="../assets/images/admin/edit.svg" alt="edit">
+                                                </a>
+                                                <a href="">
+                                                    <img src="../assets/images/admin/delete.svg" alt="delete">
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">20005</th>
+                                        <td>محمد أحمد ابراهيم</td>
+                                        <td>123</td>
+                                        <td>45000 ريال</td>
+                                        <td>
+                                            <span class="badge rounded-pill done">مقبول</span>
+                                        </td>
+                                        <td>5</td>
+                                        <td><a href="" class="download-file">
+                                                <img src="../assets/images/admin/download-file.svg" alt="download-file">
+                                                <span>تحميل العقد</span>
+                                            </a></td>
+                                        <td>
+                                            <div class="action-btns">
+                                                <a href="">
+                                                    <img src="../assets/images/admin/view.svg" alt="view">
+                                                </a>
+                                                <a href="">
+                                                    <img src="../assets/images/admin/edit.svg" alt="edit">
+                                                </a>
+                                                <a href="">
+                                                    <img src="../assets/images/admin/delete.svg" alt="delete">
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">20005</th>
+                                        <td>محمد أحمد ابراهيم</td>
+                                        <td>123</td>
+                                        <td>45000 ريال</td>
+                                        <td>
+                                            <span class="badge rounded-pill done">مقبول</span>
+                                        </td>
+                                        <td>5</td>
+                                        <td><a href="" class="download-file">
+                                                <img src="../assets/images/admin/download-file.svg" alt="download-file">
+                                                <span>تحميل العقد</span>
+                                            </a></td>
+                                        <td>
+                                            <div class="action-btns">
+                                                <a href="">
+                                                    <img src="../assets/images/admin/view.svg" alt="view">
+                                                </a>
+                                                <a href="">
+                                                    <img src="../assets/images/admin/edit.svg" alt="edit">
+                                                </a>
+                                                <a href="">
+                                                    <img src="../assets/images/admin/delete.svg" alt="delete">
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">20005</th>
+                                        <td>محمد أحمد ابراهيم</td>
+                                        <td>123</td>
+                                        <td>45000 ريال</td>
+                                        <td>
+                                            <span class="badge rounded-pill done">مقبول</span>
+                                        </td>
+                                        <td>5</td>
+                                        <td><a href="" class="download-file">
+                                                <img src="../assets/images/admin/download-file.svg" alt="download-file">
+                                                <span>تحميل العقد</span>
+                                            </a></td>
+                                        <td>
+                                            <div class="action-btns">
+                                                <a href="">
+                                                    <img src="../assets/images/admin/view.svg" alt="view">
+                                                </a>
+                                                <a href="">
+                                                    <img src="../assets/images/admin/edit.svg" alt="edit">
+                                                </a>
+                                                <a href="">
+                                                    <img src="../assets/images/admin/delete.svg" alt="delete">
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">20005</th>
+                                        <td>محمد أحمد ابراهيم</td>
+                                        <td>123</td>
+                                        <td>45000 ريال</td>
+                                        <td>
+                                            <span class="badge rounded-pill done">مقبول</span>
+                                        </td>
+                                        <td>5</td>
+                                        <td><a href="" class="download-file">
+                                                <img src="../assets/images/admin/download-file.svg" alt="download-file">
+                                                <span>تحميل العقد</span>
+                                            </a></td>
+                                        <td>
+                                            <div class="action-btns">
+                                                <a href="">
+                                                    <img src="../assets/images/admin/view.svg" alt="view">
+                                                </a>
+                                                <a href="">
+                                                    <img src="../assets/images/admin/edit.svg" alt="edit">
+                                                </a>
+                                                <a href="">
+                                                    <img src="../assets/images/admin/delete.svg" alt="delete">
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">20005</th>
+                                        <td>محمد أحمد ابراهيم</td>
+                                        <td>123</td>
+                                        <td>45000 ريال</td>
+                                        <td>
+                                            <span class="badge rounded-pill done">مقبول</span>
+                                        </td>
+                                        <td>5</td>
+                                        <td><a href="" class="download-file">
+                                                <img src="../assets/images/admin/download-file.svg" alt="download-file">
+                                                <span>تحميل العقد</span>
+                                            </a></td>
+                                        <td>
+                                            <div class="action-btns">
+                                                <a href="">
+                                                    <img src="../assets/images/admin/view.svg" alt="view">
+                                                </a>
+                                                <a href="">
+                                                    <img src="../assets/images/admin/edit.svg" alt="edit">
+                                                </a>
+                                                <a href="">
+                                                    <img src="../assets/images/admin/delete.svg" alt="delete">
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">20005</th>
+                                        <td>محمد أحمد ابراهيم</td>
+                                        <td>123</td>
+                                        <td>45000 ريال</td>
+                                        <td>
+                                            <span class="badge rounded-pill done">مقبول</span>
+                                        </td>
+                                        <td>5</td>
+                                        <td><a href="" class="download-file">
+                                                <img src="../assets/images/admin/download-file.svg" alt="download-file">
+                                                <span>تحميل العقد</span>
+                                            </a></td>
+                                        <td>
+                                            <div class="action-btns">
+                                                <a href="">
+                                                    <img src="../assets/images/admin/view.svg" alt="view">
+                                                </a>
+                                                <a href="">
+                                                    <img src="../assets/images/admin/edit.svg" alt="edit">
+                                                </a>
+                                                <a href="">
+                                                    <img src="../assets/images/admin/delete.svg" alt="delete">
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">20005</th>
+                                        <td>محمد أحمد ابراهيم</td>
+                                        <td>123</td>
+                                        <td>45000 ريال</td>
+                                        <td>
+                                            <span class="badge rounded-pill done">مقبول</span>
+                                        </td>
+                                        <td>5</td>
+                                        <td><a href="" class="download-file">
+                                                <img src="../assets/images/admin/download-file.svg" alt="download-file">
+                                                <span>تحميل العقد</span>
+                                            </a></td>
+                                        <td>
+                                            <div class="action-btns">
+                                                <a href="">
+                                                    <img src="../assets/images/admin/view.svg" alt="view">
+                                                </a>
+                                                <a href="">
+                                                    <img src="../assets/images/admin/edit.svg" alt="edit">
+                                                </a>
+                                                <a href="">
+                                                    <img src="../assets/images/admin/delete.svg" alt="delete">
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">20005</th>
+                                        <td>محمد أحمد ابراهيم</td>
+                                        <td>123</td>
+                                        <td>45000 ريال</td>
+                                        <td>
+                                            <span class="badge rounded-pill done">مقبول</span>
+                                        </td>
+                                        <td>5</td>
+                                        <td><a href="" class="download-file">
+                                                <img src="../assets/images/admin/download-file.svg" alt="download-file">
+                                                <span>تحميل العقد</span>
+                                            </a></td>
+                                        <td>
+                                            <div class="action-btns">
+                                                <a href="">
+                                                    <img src="../assets/images/admin/view.svg" alt="view">
+                                                </a>
+                                                <a href="">
+                                                    <img src="../assets/images/admin/edit.svg" alt="edit">
+                                                </a>
+                                                <a href="">
+                                                    <img src="../assets/images/admin/delete.svg" alt="delete">
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">20005</th>
+                                        <td>محمد أحمد ابراهيم</td>
+                                        <td>123</td>
+                                        <td>45000 ريال</td>
+                                        <td>
+                                            <span class="badge rounded-pill done">مقبول</span>
+                                        </td>
+                                        <td>5</td>
+                                        <td><a href="" class="download-file">
+                                                <img src="../assets/images/admin/download-file.svg" alt="download-file">
+                                                <span>تحميل العقد</span>
+                                            </a></td>
+                                        <td>
+                                            <div class="action-btns">
+                                                <a href="">
+                                                    <img src="../assets/images/admin/view.svg" alt="view">
+                                                </a>
+                                                <a href="">
+                                                    <img src="../assets/images/admin/edit.svg" alt="edit">
+                                                </a>
+                                                <a href="">
+                                                    <img src="../assets/images/admin/delete.svg" alt="delete">
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">20005</th>
+                                        <td>محمد أحمد ابراهيم</td>
+                                        <td>123</td>
+                                        <td>45000 ريال</td>
+                                        <td>
+                                            <span class="badge rounded-pill done">مقبول</span>
+                                        </td>
+                                        <td>5</td>
+                                        <td><a href="" class="download-file">
+                                                <img src="../assets/images/admin/download-file.svg" alt="download-file">
+                                                <span>تحميل العقد</span>
+                                            </a></td>
+                                        <td>
+                                            <div class="action-btns">
+                                                <a href="">
+                                                    <img src="../assets/images/admin/view.svg" alt="view">
+                                                </a>
+                                                <a href="">
+                                                    <img src="../assets/images/admin/edit.svg" alt="edit">
+                                                </a>
+                                                <a href="">
+                                                    <img src="../assets/images/admin/delete.svg" alt="delete">
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination">
+                                    <li class="page-item disabled">
+                                        <a class="page-link" href="#" aria-label="Previous">
+                                            <span aria-hidden="true">&laquo;</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item active" aria-current="page"><a class="page-link" href="#">1</a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#" aria-label="Next">
+                                            <span aria-hidden="true">&raquo;</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
+
+                </div>
+            </section>
+        </main>
+    </section>
+
+
+
+
+    <script src="/assets/vendor/bootstrap.bundle.min.js"></script>
+    <script src="/assets/vendor/jquery-3.7.1.min.js"></script>
+</body>
+
+</html>
