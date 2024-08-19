@@ -191,6 +191,21 @@ input[type=checkbox]:checked {
   color: #FFFFFF;
 }
 
+.data-card {
+  font-family: "IBM-medium";
+  margin-bottom: 2rem;
+}
+.data-card label {
+  color: #262E5C;
+  margin-bottom: 1rem;
+}
+.data-card h6 {
+  color: #4CC2BF;
+}
+.data-card .badge {
+  font-weight: normal;
+}
+
 @font-face {
   font-family: "IBM-regular";
   src: url("/assets/fonts/IBMPlexSansArabic-Regular.ttf");
@@ -436,7 +451,7 @@ body.admin {
 .split-admin-panel main .admin-wrapper {
   border: 1px solid #CEEAF0;
   height: 100%;
-  padding-inline: 2rem;
+  padding-inline: 1rem;
 }
 .split-admin-panel main .admin-wrapper .form-header {
   transform: translateY(-1rem);
@@ -476,6 +491,13 @@ body.admin {
 .split-admin-panel main .admin-wrapper-container td .action-btns a img {
   width: 20px;
   margin-inline: 0.2rem;
+}
+
+.user-basic-data.card-fixed-top {
+  background-color: rgba(231, 244, 247, 0.4);
+  border: 1px solid #E7F4F7;
+  padding: 2rem 2rem 0;
+  margin-bottom: 2rem;
 }
 
 /*# sourceMappingURL=admin.css.map */

@@ -224,3 +224,22 @@ input[type="checkbox"] {
         }
     }
 }
+
+
+.data-card {
+    font-family: "IBM-medium";
+    margin-bottom: 2rem;
+
+    label {
+        color: $primary-color;
+        margin-bottom: 1rem;
+    }
+
+    h6 {
+        color: $secondary-color;
+    }
+
+    .badge {
+        font-weight: normal;
+    }
+}
