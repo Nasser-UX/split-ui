@@ -12,6 +12,10 @@ a {
     color: $secondary-color !important;
 }
 
+.color-danger {
+    color: $error !important;
+}
+
 .bg-secondary {
     background-color: $secondary-light !important;
 }
@@ -242,4 +246,45 @@ input[type="checkbox"] {
     .badge {
         font-weight: normal;
     }
+}
+
+// dropdown-menu
+
+.dropdown-menu {
+    text-align: start;
+    border: 0;
+    box-shadow: 0px 10px 20px transparentize($primary-color, 0.9);
+
+    li {
+        &:not(:last-child) {
+            border-bottom: 1px solid #ebebeb;
+        }
+    }
+
+    .dropdown-item {
+        padding: 0.5rem 1rem;
+        font-family: "IBM-medium";
+
+
+        &:active {
+            background-color: $secondary-color;
+            color: $white;
+        }
+    }
+}
+
+textarea {
+    min-height: 120px !important;
+}
+
+.form-check-input:focus {
+    box-shadow: none;
+}
+
+// .dropzone
+
+.dropzone {
+    background-color: #F0FBFE;
+    border-radius: 0 !important;
+    border-color: #75CEC8 !important;
 }

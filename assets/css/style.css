@@ -10,6 +10,10 @@ a {
   color: #4CC2BF !important;
 }
 
+.color-danger {
+  color: #C73434 !important;
+}
+
 .bg-secondary {
   background-color: #E7F4F7 !important;
 }
@@ -204,6 +208,37 @@ input[type=checkbox]:checked {
 }
 .data-card .badge {
   font-weight: normal;
+}
+
+.dropdown-menu {
+  text-align: start;
+  border: 0;
+  box-shadow: 0px 10px 20px rgba(38, 46, 92, 0.1);
+}
+.dropdown-menu li:not(:last-child) {
+  border-bottom: 1px solid #ebebeb;
+}
+.dropdown-menu .dropdown-item {
+  padding: 0.5rem 1rem;
+  font-family: "IBM-medium";
+}
+.dropdown-menu .dropdown-item:active {
+  background-color: #4CC2BF;
+  color: #FFFFFF;
+}
+
+textarea {
+  min-height: 120px !important;
+}
+
+.form-check-input:focus {
+  box-shadow: none;
+}
+
+.dropzone {
+  background-color: #F0FBFE;
+  border-radius: 0 !important;
+  border-color: #75CEC8 !important;
 }
 
 @font-face {
@@ -914,7 +949,7 @@ body {
   box-shadow: 0px 4px 20px 3px #daebef;
   min-height: 500px;
   display: flex;
-  align-items: flex-start;
+  align-items: stretch;
 }
 .inner-content .split-apply-form aside {
   flex: 1 1 25%;
@@ -951,6 +986,7 @@ body {
 .inner-content .split-apply-form aside ul li > div {
   flex: 1 1 80%;
   margin-inline-start: 0.7rem;
+  min-height: 70px;
 }
 .inner-content .split-apply-form aside ul li > div h4 {
   font-family: "IBM-semibold";
@@ -984,6 +1020,8 @@ body {
 .inner-content .split-apply-form main.form-content {
   flex: 1 1 75%;
   padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
 }
 .inner-content .split-apply-form main.form-content .wrap {
   border: 1px solid #E7F4F7;
@@ -1055,6 +1093,7 @@ body {
   }
   .inner-content .split-apply-form aside ul li > div {
     margin: 0.7rem 0 0;
+    min-height: auto;
   }
   .inner-content .split-apply-form aside ul li > div p {
     display: none;

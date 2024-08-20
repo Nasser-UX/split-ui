@@ -10,6 +10,10 @@ a {
   color: #4CC2BF !important;
 }
 
+.color-danger {
+  color: #C73434 !important;
+}
+
 .bg-secondary {
   background-color: #E7F4F7 !important;
 }
@@ -204,6 +208,37 @@ input[type=checkbox]:checked {
 }
 .data-card .badge {
   font-weight: normal;
+}
+
+.dropdown-menu {
+  text-align: start;
+  border: 0;
+  box-shadow: 0px 10px 20px rgba(38, 46, 92, 0.1);
+}
+.dropdown-menu li:not(:last-child) {
+  border-bottom: 1px solid #ebebeb;
+}
+.dropdown-menu .dropdown-item {
+  padding: 0.5rem 1rem;
+  font-family: "IBM-medium";
+}
+.dropdown-menu .dropdown-item:active {
+  background-color: #4CC2BF;
+  color: #FFFFFF;
+}
+
+textarea {
+  min-height: 120px !important;
+}
+
+.form-check-input:focus {
+  box-shadow: none;
+}
+
+.dropzone {
+  background-color: #F0FBFE;
+  border-radius: 0 !important;
+  border-color: #75CEC8 !important;
 }
 
 @font-face {
@@ -420,11 +455,14 @@ body.admin {
   background-size: 164%;
 }
 .split-admin-panel aside ul li {
-  padding: 0.5rem 1rem;
+  padding: 0.7rem 1rem;
   border-bottom: 1px solid #4e7377;
 }
 .split-admin-panel aside ul li a {
   color: #FFFFFF;
+}
+.split-admin-panel aside ul li a img {
+  margin-inline-end: 0.5rem;
 }
 .split-admin-panel aside ul li.active {
   background: linear-gradient(45deg, #236996, transparent);
@@ -492,12 +530,125 @@ body.admin {
   width: 20px;
   margin-inline: 0.2rem;
 }
+.split-admin-panel main .form-footer {
+  background-color: #CEEAF0;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+}
+.split-admin-panel main .form-footer > div .split-btn,
+.split-admin-panel main .form-footer > div .split-btn-outline {
+  display: inline-flex;
+  justify-content: center;
+}
+.split-admin-panel main .form-footer .split-btn {
+  min-width: 120px;
+  text-align: center;
+}
+.split-admin-panel main .form-footer .split-btn:hover {
+  color: #FFFFFF;
+}
+.split-admin-panel main .form-footer .split-btn-outline {
+  min-width: 120px;
+  text-align: center;
+}
+.split-admin-panel main .form-footer .link-btn {
+  margin-inline-start: auto;
+}
 
 .user-basic-data.card-fixed-top {
   background-color: rgba(231, 244, 247, 0.4);
   border: 1px solid #E7F4F7;
   padding: 2rem 2rem 0;
   margin-bottom: 2rem;
+}
+
+@media (min-width: 1600px) {
+  .request-details,
+.request-status {
+    max-width: 70%;
+  }
+}
+
+.form-steps {
+  display: block;
+  width: 100%;
+  position: relative;
+  margin: 40px 0;
+}
+.form-steps:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.form-steps-item {
+  padding: 0;
+  position: relative;
+  display: block;
+  float: right;
+  width: 25%;
+  text-align: center;
+}
+.form-steps-item .item-content {
+  display: inline-block;
+}
+.form-steps-item .item-content .icon {
+  background: #eceff1;
+  color: #8191ab;
+  display: block;
+  border-radius: 100%;
+  text-align: center;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  margin: 0 auto 10px auto;
+  position: relative;
+  font-size: 13px;
+  font-weight: 700;
+  z-index: 2;
+}
+.form-steps-item .item-content .text {
+  font-size: 13px;
+  color: #8191ab;
+  font-weight: 500;
+}
+.form-steps-item .item-content .line {
+  display: inline-block;
+  height: 3px;
+  width: 100%;
+  background: #cfd8dc;
+  float: right;
+  position: absolute;
+  right: -50%;
+  top: 12px;
+  z-index: 1;
+}
+.form-steps-item.active .icon {
+  background: #4CC2BF;
+  color: #ffffff;
+}
+.form-steps-item.active .text {
+  color: #4f5e77;
+}
+.form-steps-item.active .line {
+  background: #4CC2BF;
+}
+.form-steps-item.completed .text {
+  color: #4f5e77;
+}
+.form-steps-item.completed .icon {
+  background: #262E5C;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyBkYXRhLW5hbWU9IkxheWVyIDEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDkuMTIgNyI+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTkuMTIgMS4wNkw4LjA2IDAgMy4xOCA0Ljg4IDEuMDYgMi43NiAwIDMuODIgMy4xOCA3bDUuOTQtNS45NHoiLz48L3N2Zz4=);
+  color: transparent;
+  background-size: 10px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+}
+.form-steps-item.completed .line {
+  background: #4CC2BF;
 }
 
 /*# sourceMappingURL=admin.css.map */

@@ -59,7 +59,7 @@
         box-shadow: 0px 4px 20px 3px #daebef;
         min-height: 500px;
         display: flex;
-        align-items: flex-start;
+        align-items: stretch;
 
 
 
@@ -101,6 +101,7 @@
                     >div {
                         flex: 1 1 80%;
                         margin-inline-start: .7rem;
+                        min-height: 70px;
 
                         h4 {
                             font-family: "IBM-semibold";
@@ -150,6 +151,8 @@
         main.form-content {
             flex: 1 1 75%;
             padding: 3rem 2rem;
+            display: flex;
+            flex-direction: column;
 
             .wrap {
                 border: 1px solid $secondary-light;
@@ -237,6 +240,7 @@
 
                         >div {
                             margin: .7rem 0 0;
+                            min-height: auto;
 
                             p {
                                 display: none;

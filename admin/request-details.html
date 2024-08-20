@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../assets/vendor/bootstrap.min.css">
     <title>Split | Admin Panel</title>
     <link rel="icon" href="../assets/images/favicon.png">
+    <link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css" />
     <link rel="stylesheet" href="../assets/css/admin.css">
 </head>
 
@@ -33,6 +34,60 @@
                         <span>المستخدمين</span>
                     </a>
                 </li>
+                <li>
+                    <a href="">
+                        <img src="../assets/images/admin/partners.svg" alt="partners">
+                        <span>الشركاء</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../assets/images/admin/faq.svg" alt="faq">
+                        <span>الأسئلة الشائعة</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../assets/images/admin/rs-activity.svg" alt="rs-activity">
+                        <span>أنواع النشاط العقاري</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../assets/images/admin/location.svg" alt="location">
+                        <span>المناطق</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../assets/images/admin/user-status.svg" alt="user-status">
+                        <span>الحالات الاجتماعية</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../assets/images/admin/building-types.svg" alt="building-types">
+                        <span>أنواع الوحدات</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../assets/images/admin/workflow.svg" alt="workflow">
+                        <span>سير العمل</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../assets/images/admin/workflow-steps.svg" alt="workflow-steps">
+                        <span>مراحل سير العمل</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="../assets/images/admin/workflow-status.svg" alt="workflow-status">
+                        <span>حالات سير العمل</span>
+                    </a>
+                </li>
 
             </ul>
             <footer>
@@ -53,113 +108,207 @@
                         <img src="../assets/images/SPLIT-Logo.svg" alt="Split Logo">
                     </a>
 
-                    <div class="d-flex  me-auto" role="search">
+                    <div class="d-flex me-auto" role="search">
                         <button class="split-btn-outline mx-2" type="submit">EN</button>
-                        <a href="/profile.html" class="split-btn" type="submit">
-                            <img src="../assets/images/user-icon.svg" alt="user icon">
-                            <span>عبد الله أحمد</span>
-                        </a>
+                        <div class="dropdown d-flex">
+                            <a href="/profile.html" class="split-btn dropdown-toggle" href="#" role="button"
+                                id="adminUserMenu" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="../assets/images/user-icon.svg" alt="user icon">
+                                <span>عبد الله أحمد</span>
+                            </a>
+                            <ul class="dropdown-menu animated--dropdown" aria-labelledby="adminUserMenu">
+                                <li><a class="dropdown-item" href="#">الصفحة الشخصية</a></li>
+                                <li><a class="dropdown-item color-danger" href="#">تسجيل الخروج</a></li>
+                            </ul>
+                        </div>
                     </div>
 
                 </nav>
             </header>
 
-            <section class="admin-wrapper mb-5">
+            <section class="request-status">
+                <nav class="form-steps">
+                    <div class="form-steps-item completed">
+                        <div class="item-content">
+                            <span class="icon">1</span>
+                            <span class="text">انشاء الطلب</span>
+                        </div>
+
+                    </div>
+                    <div class="form-steps-item completed">
+                        <div class="item-content">
+                            <span class="icon">2</span>
+                            <span class="line"></span>
+                            <span class="text">قيد الدراسة</span>
+                        </div>
+                    </div>
+                    <div class="form-steps-item completed">
+                        <div class="item-content">
+                            <span class="icon">3</span>
+                            <span class="line"></span>
+                            <span class="text">نتيجة الطلب</span>
+                        </div>
+                    </div>
+                    <div class="form-steps-item active">
+                        <div class="item-content">
+                            <span class="icon">4</span>
+                            <span class="line"></span>
+                            <span class="text">توثيق العقد</span>
+                        </div>
+                    </div>
+                </nav>
+            </section>
+
+            <section class="admin-wrapper mb-5 request-details">
+                <div class="form-header">
+                    <h3>بيانات الطلب</h3>
+                </div>
+
+                <div class="admin-wrapper-container">
+                    <div class="user-basic-data">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="data-card">
+                                    <label>الطلب</label>
+                                    <h6>0011</h6>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="data-card">
+                                    <label>تاريخ الطلب</label>
+                                    <h6>01/08/2024</h6>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="data-card">
+                                    <label>الموقع</label>
+                                    <h6>الرياض</h6>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="data-card">
+                                    <label>الوحدة</label>
+                                    <h6>شقة</h6>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12">
+                                <div class="data-card">
+                                    <label>حالة الطلب</label>
+                                    <h6>
+
+                                        <div class="badge rounded-pill bg-light under-processing">
+                                            تحت الدراسة
+                                        </div>
+
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="admin-wrapper mb-5 request-details">
                 <div class="form-header">
                     <h3>البيانات الاساسية</h3>
                 </div>
 
                 <div class="admin-wrapper-container">
-                    <div class="user-basic-data card-fixed-top">
+                    <div class="user-basic-data">
                         <div class="row">
                             <div class="col-lg-4 col-md-6 col-sm-12">
                                 <div class="data-card">
-                                    <label>الطلب</label>
-                                    <h6>0011</h6>
+                                    <label>الاسم بالكامل</label>
+                                    <h6>عبدالله أحمد خالد</h6>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-12">
                                 <div class="data-card">
-                                    <label>تاريخ الطلب</label>
-                                    <h6>01/08/2024</h6>
+                                    <label>رقم الهويه</label>
+                                    <h6>000 000 000 000</h6>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-12">
                                 <div class="data-card">
-                                    <label>الموقع</label>
-                                    <h6>الرياض</h6>
+                                    <label>الجنسية</label>
+                                    <h6>مصرى</h6>
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-12">
                                 <div class="data-card">
-                                    <label>الوحدة</label>
-                                    <h6>شقة</h6>
+                                    <label>الهاتف</label>
+                                    <h6>+9600502111</h6>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="col-lg-4 col-md-6 col-sm-12">
                                 <div class="data-card">
-                                    <label>حالة الطلب</label>
-                                    <h6>
+                                    <label>تاريخ الميلاد</label>
+                                    <h6>1/1/2000</h6>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="data-card">
+                                    <label>البريد الالكترونى</label>
+                                    <h6>Name@domain.com</h6>
+                                </div>
+                            </div>
 
-                                        <div class="badge rounded-pill bg-light under-processing">
-                                            تحت الدراسة
-                                        </div>
-
-                                    </h6>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="admin-wrapper">
+
+            <section class="admin-wrapper request-details">
                 <div class="form-header">
-                    <h3>الطلبات</h3>
+                    <h3>الاجراء</h3>
                 </div>
 
                 <div class="admin-wrapper-container">
-                    <div class="user-basic-data card-fixed-top">
-                        <div class="row">
-                            <div class="col-lg-4 col-md-6 col-sm-12">
-                                <div class="data-card">
-                                    <label>الطلب</label>
-                                    <h6>0011</h6>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-12">
-                                <div class="data-card">
-                                    <label>تاريخ الطلب</label>
-                                    <h6>01/08/2024</h6>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-12">
-                                <div class="data-card">
-                                    <label>الموقع</label>
-                                    <h6>الرياض</h6>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-12">
-                                <div class="data-card">
-                                    <label>الوحدة</label>
-                                    <h6>شقة</h6>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-sm-12">
-                                <div class="data-card">
-                                    <label>حالة الطلب</label>
-                                    <h6>
+                    <div class="form-group mb-0">
+                        <label for="">الموافقة على الطلب</label>
 
-                                        <div class="badge rounded-pill bg-light under-processing">
-                                            تحت الدراسة
-                                        </div>
+                        <div class="input-group">
+                            <div class="form-check form-check-inline mb-3">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                    value="option1">
+                                <label class="form-check-label" for="inlineRadio1">قبول</label>
+                            </div>
+                            <div class="form-check form-check-inline me-5 mb-3">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                    value="option2">
+                                <label class="form-check-label" for="inlineRadio2">رفض</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12">
+                            <div class="form-group">
+                                <textarea class="form-control"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12">
+                            <div class="form-group">
+                                <label class="mb-3" for="">نوع الوحدة</label>
 
-                                    </h6>
-                                </div>
+                                <form action="/file-upload" class="dropzone">
+                                    <div class="fallback">
+                                        <input name="file" type="file" multiple />
+                                        <!-- start dropzone -->
+                                    </div>
+                                </form>
+
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+            <div class="form-footer">
+                <div>
+                    <a href="" class="split-btn">إرسال</a>
+                </div>
+                <a href="" class="link-btn">إلغاء</a>
+            </div>
 
         </main>
     </section>
@@ -169,6 +318,12 @@
 
     <script src="/assets/vendor/bootstrap.bundle.min.js"></script>
     <script src="/assets/vendor/jquery-3.7.1.min.js"></script>
+    <script src="https://unpkg.com/dropzone@6.0.0-beta.1/dist/dropzone-min.js"></script>
+    <link href="https://unpkg.com/dropzone@6.0.0-beta.1/dist/dropzone.css" rel="stylesheet" type="text/css" />
+    <script>
+        // Dropzone has been added as a global variable.
+        const dropzone = new Dropzone(".dropzone", {});
+    </script>
 </body>
 
 </html>
